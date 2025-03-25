@@ -1,0 +1,120 @@
+#section-otimizacao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  background-color: var(--FB0165);
+  margin-top: 230px;
+
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 1s forwards;
+}
+
+/* Animação para fazer a seção aparecer com um movimento suave */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#otimizacao {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Animação para o título h3 */
+#otimizacao h3 {
+  font: 800 3.5rem/110% var(--font-family);
+  color: var(--branco);
+  opacity: 0;
+  transform: translateX(-50px);
+  animation: slideInLeft 1s 0.5s forwards;
+}
+
+/* Animação para o título h3 deslizar da esquerda */
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+#otimizacao p {
+  font: 700 1.25rem/100% var(--font-family);
+  color: var(--branco);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  opacity: 0;
+  transform: translateX(50px);
+  animation: slideInRight 1s 0.8s forwards;
+}
+
+/* Animação para o parágrafo deslizar da direita */
+@keyframes slideInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.texto-otimizacao {
+  font: 400 1.5rem/160% var(--font-family);
+  color: var(--branco);
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 1s 1.2s forwards;
+}
+
+/* Animação para o texto deslizar para cima */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Adicionando interatividade com hover para os botões ou outros elementos */
+#otimizacao p:hover {
+  color: var(--D10F66);
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+
+#section-otimizacao .celular {
+  margin-top: 160px;
+  margin-bottom: 160px;
+  animation: bounce 1.5s ease infinite;
+}
+
+/* Animação para o elemento .celular dar um "efeito de salto" */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+

@@ -1,0 +1,147 @@
+#projetos {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  gap: 2rem;
+}
+
+.projetos-clientes {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  & h3 {
+    font: 800 3.5rem/110% var(--font-family);
+    color: var(--branco);
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+.projetin {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+}
+
+#projeto-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  & p {
+    font: 500 1rem/110% var(--font-family);
+    color: var(--branco);
+  }
+
+  & h4 {
+    font: 700 2.5rem/110% var(--font-family);
+    color: var(--branco);
+  }
+
+  & a {
+    background-color: var(--D10F66);
+    padding: 10px 10px;
+    border-radius: 8px;
+  }
+}
+
+.link-1 {
+  margin-top: 10px;
+}
+
+.link-1:hover{
+  transform: scale(1.02);
+  transition: .3s ease;
+}
+
+#projeto-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  & p {
+    font: 500 1rem/110% var(--font-family);
+    color: var(--branco);
+  }
+
+  & h4 {
+    font: 700 2.5rem/110% var(--font-family);
+    color: var(--branco);
+  }
+
+  & a {
+    background-color: var(--D10F66);
+    padding: 10px 10px;
+    border-radius: 8px;
+  }
+}
+
+.link-2 {
+  margin-top: 10px;
+}
+
+.link-2:hover{
+  transform: scale(1.02);
+  transition: .3s ease;
+}
+
+
+#projeto-3 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  & p {
+    font: 500 1rem/110% var(--font-family);
+    color: var(--branco);
+  }
+
+  & h4 {
+    font: 700 2.5rem/110% var(--font-family);
+    color: var(--branco);
+  }
+
+  & a {
+    background-color: var(--D10F66);
+    padding: 10px 10px;
+    border-radius: 8px;
+  }
+}
+
+.link-3 {
+  margin-top: 10px;
+}
+
+.link-3:hover{
+  transform: scale(1.02);
+  transition: .3s ease;
+}
+
+
+@media (max-width: 620px) {
+  .projetin {
+    display: flex;
+    flex-direction: column; /* Empilha os projetos */
+    align-items: center; /* Centraliza os itens */
+    gap: 1.5rem; /* Reduz o espaçamento */
+    width: 100%;
+  }
+
+  #projeto-1, #projeto-2, #projeto-3 {
+    width: 90%; /* Ajusta a largura */
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; /* Garante alinhamento */
+  }
+
+  .projetos-clientes h3 {
+    font-size: 2.5rem; /* Reduz o tamanho do título */
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}

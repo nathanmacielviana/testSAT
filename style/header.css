@@ -1,0 +1,114 @@
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem;
+  margin: 2rem auto;
+  gap: 20px;
+  width: 62.5rem;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0px 25px 50px -12px rgba(0, 0, 0, 0.25),
+    0px 0px 15px rgba(0, 0, 0, 0.07);
+  border-radius: 1.25rem;
+}
+
+#logo {
+  width: 60px;
+}
+
+#logo:hover{
+  transform: scale(1.1);
+  transition: .3s ease;
+}
+
+#links {
+  display: flex;
+  gap: 30px;
+}
+
+#links a:hover{
+  color: var(--D10F66);
+  transition: .3s ease;
+}
+
+.btn-header {
+  display: flex;
+  padding: 1.25rem 0.625rem;
+  background-color: var(--D10F66);
+  border-radius: 0.5rem;
+}
+
+.btn-header:hover{
+   transform: scale(1.1);
+   transition: .3s ease;
+}
+
+/* Estilo do menu hambúrguer */
+#menu-hamburger {
+  display: none; 
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+#menu-hamburger .bar {
+  width: 30px;
+  height: 4px;
+  background-color: var(--branco);
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+/* Menu deslizando (inicialmente escondido) */
+#menu-slide {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(-100%); /* Esconde o menu inicialmente */
+}
+
+#menu-slide a {
+  color: var(--branco);
+  font-size: 1.5rem;
+  text-decoration: none;
+  padding: 1rem 0;
+  transition: color 0.3s ease;
+}
+
+#menu-slide a:hover {
+  color: var(--D10F66); 
+}
+
+/* Quando o menu for aberto */
+#menu-slide.active {
+  display: flex; /* Menu visível */
+  transform: translateX(0); /* Animação de deslizamento */
+}
+
+
+@media screen and (max-width: 767px) {
+  
+  #menu-hamburger {
+    display: flex;
+  }
+
+  #menu-slide.active {
+    display: flex;
+  }
+
+  #links {
+    display: none; 
+  }
+}

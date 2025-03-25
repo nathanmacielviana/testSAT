@@ -1,0 +1,101 @@
+#section-design {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  place-self: center;
+  place-content: center;
+  place-items: center;
+
+  margin-top: 200px;
+}
+
+.design-info {
+  display: flex;
+  flex-direction: column;
+
+  margin-left: 100px;
+
+  gap: 32px;
+
+  & .sub-logo {
+    font: 700 1.25rem/100% var(--font-family);
+    color: var(--branco);
+    letter-spacing: 3px;
+  }
+
+  & h2 {
+    color: var(--DEDEDE);
+    font: var(--h1-principal);
+
+    & span::after {
+      visibility: hidden;
+    }
+  }
+
+  & strong {
+    color: var(--FB0165);
+  }
+
+  & .descricao {
+    color: var(--branco);
+    font: var(--p-principal);
+  }
+}
+
+.btn-cliente {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn-cliente:hover {
+  transform: scale(1.02);
+}
+
+.btn-cliente svg {
+  transition: transform 0.3s ease;
+}
+
+.btn-cliente:hover svg {
+  transform: translateX(5px);
+}
+
+.saturn-icon {
+  margin-left: 200px;
+  font-size: 40px; 
+  transition: all 0.3s ease-in-out;
+  display: inline-block;
+  cursor: pointer;
+  animation: bounceEffect 2s ease-in-out infinite;
+
+}
+
+
+@keyframes bounceEffect {
+  0% {
+    transform: translateX(0) scale(1) rotate(0deg);
+    opacity: 0.5;
+  }
+  25% {
+    transform: translateX(-20px) scale(1.1) rotate(-5deg);
+    opacity: 1;
+  }
+  50% {
+    transform: translateX(20px) scale(1) rotate(5deg);
+    opacity: 1;
+  }
+  75% {
+    transform: translateX(-10px) scale(1.05) rotate(-2deg);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateX(0) scale(1) rotate(0deg);
+    opacity: 1;
+  }
+}
+
+
+.saturn-icon:hover {
+  animation: bounceEffect 1s ease-in-out infinite;
+  transform: scale(1.2); 
+}

@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Paleta */
+  --FB0165: #fb0165;
+  --D10F66: #d10f66;
+  --0D0D0D: #0d0d0d;
+  --040000: #040000;
+  --DEDEDE: #dedede;
+  --branco: #ffffff;
+
+  /* Tipografia */
+  --font-family: "Roboto", sans-serif;
+
+  --logo: 700 2rem/110% var(--font-family);
+  --links: 500 1rem/24% var(--font-family);
+  --sub-links: 500 1.25rem/24% var(--font-family);
+
+  --h1-principal: 800 4.5rem/110% var(--font-family);
+  --p-principal: 500 1.125rem/160% var(--font-family);
+}
+
+body {
+  background: var(--0D0D0D);
+}
+
+a {
+  text-decoration: none;
+  color: var(--branco);
+  font: var(--links);
+}
